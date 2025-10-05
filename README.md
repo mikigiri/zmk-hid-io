@@ -29,20 +29,17 @@ Now enable the config in your `<shield>.config` file (read the Kconfig file to f
 CONFIG_USB_DEVICE_HID=y
 
 # Add one more USB_HID_DEVICE. 
-# Hence, zmk default use 2 HID, HID_0 for keyboard, HID_1 for mouse.
-CONFIG_USB_HID_DEVICE_COUNT=3
+# Hence, zmk default uses 1 HID, HID_0 for keyboard, 
+# we use HID_1 for joystick, mouse. or output.
+CONFIG_USB_HID_DEVICE_COUNT=2
 
 # Module Config
 CONFIG_ZMK_HID_IO=y
 
-# Enable hid joystick
+# Enable either one of hid joystick / mouse / hid haptic feedback
 CONFIG_ZMK_HID_IO_JOYSTICK=y
-
-# Enable hid mouse
-CONFIG_ZMK_HID_IO_MOUSE=y
-
-# Enable hid haptic feedback
-CONFIG_ZMK_HID_IO_OUTPUT=y
+# CONFIG_ZMK_HID_IO_MOUSE=y
+# CONFIG_ZMK_HID_IO_OUTPUT=y
 
 # Enable logging
 CONFIG_ZMK_HID_IO_LOG_LEVEL_DBG=y
