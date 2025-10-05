@@ -17,24 +17,24 @@
 #include <zmk/hid-io/joystick.h>
 #include <zmk/hid-io/hid_joystick.h>
 #define ZMK_HID_JOYSTICK_NUM_BUTTONS 0x08
-#define ZMK_HID_REPORT_ID__IO_JOYSTICK 0x02
+#define ZMK_HID_REPORT_ID__IO_JOYSTICK 0x04
 #endif // IS_ENABLED(CONFIG_ZMK_HID_IO_JOYSTICK)
 
 #if IS_ENABLED(CONFIG_ZMK_HID_IO_MOUSE)
 #include <zmk/hid-io/mouse.h>
 #include <zmk/hid-io/hid_mouse.h>
 #define ZMK_HID_MOUSE_NUM_BUTTONS 0x05
-#define ZMK_HID_REPORT_ID__IO_MOUSE 0x03
+#define ZMK_HID_REPORT_ID__IO_MOUSE 0x05
 #endif // IS_ENABLED(CONFIG_ZMK_HID_IO_MOUSE)
 
 #if IS_ENABLED(CONFIG_ZMK_HID_IO_OUTPUT)
 #include <zmk/hid-io/hid_output.h>
-#define ZMK_HID_REPORT_ID__IO_OUTPUT 0x04
+#define ZMK_HID_REPORT_ID__IO_OUTPUT 0x06
 #endif // IS_ENABLED(CONFIG_ZMK_HID_IO_OUTPUT)
 
 #if IS_ENABLED(CONFIG_ZMK_HID_IO_VOLUME_KNOB)
 #include <zmk/hid-io/hid_volume_knob.h>
-#define ZMK_HID_REPORT_ID__IO_VOLUME_KNOB 0x05
+#define ZMK_HID_REPORT_ID__IO_VOLUME_KNOB 0x07
 #endif // IS_ENABLED(CONFIG_ZMK_HID_IO_VOLUME_KNOB)
 
 #include <dt-bindings/zmk/hid_usage.h>
